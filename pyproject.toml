@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'bdt'
+version = "3.0.0"
+authors = [
+  { name="Esri Professional Services"},
+]
+description = "Big Data Toolkit, tools for performing geographic analysis at scale using Spark and Python."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "arcgis>=2.0.1",
+    "h3",
+    "numpy>=1.7",
+    "openpyxl",
+    "pandas>=1.0.5",
+    "pyarrow>=1.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "arcgis>=2.0.1",
+    "h3",
+    "numpy>=1.7",
+    "openpyxl",
+    "pandas>=1.0.5",
+    "pyarrow>=1.0.0",
+    "bump2version",
+    "jupyterlab",
+    "nodejs",
+    "pytest",
+    "build"
+]
+docs = [
+    "autodocsumm",
+    "nbsphinx",
+    "furo",
+    "sphinx",
+    "sphinx-autobuild",
+    "sphinx-autodoc-typehints",
+    "sphinx-copybutton",
+    "sphinxcontrib-youtube"
+]
